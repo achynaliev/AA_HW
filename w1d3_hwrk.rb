@@ -59,3 +59,25 @@ puts reverse("atom") # => "mota"
 puts reverse("q") # => "q"
 puts reverse("id") # => "di"
 puts reverse("") # => ""
+puts "*******************"
+
+# def add_odds(n)
+#     return n if n == 1
+#
+#     if n.even?
+#       add_odds(n-1)
+#     else
+#       n + add_odds(n-1)
+#     end
+# end
+#
+# puts add_odds(1)
+
+def powers_sum(n)
+  return n if n == 1
+  print " 1 "
+  (n * n) * powers_sum(n - 1)
+end
+
+puts
+puts powers_sum(10)
