@@ -15,6 +15,7 @@ class Stack
   def show
     copy = @stack.dup
   end
+  privet
 
 end
 
